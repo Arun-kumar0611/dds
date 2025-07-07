@@ -1,0 +1,23 @@
+#include <iostream>
+using namespace std;
+#define size 6
+int stack[size];
+int top=-1;
+void pop(){
+    if(top==-1){
+    cout<<"stack is under flow"<<endl;
+    }
+    else{
+        cout<<stack[top]<<"removed"<<endl;
+        top++;
+    }
+}
+int main() {
+    pop();
+    pop();
+    pop();
+    pop();
+    
+
+    return 0;
+}
